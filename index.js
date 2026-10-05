@@ -4,15 +4,15 @@ const whatsappUrl = (message) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encode
 
 const products = [
   {id:"glow-harvest",name:"Glow Harvest Brightening Lotion",label:"Glow Harvest Brightening Lotion",category:"body",price:20000,priceLabel:"₦20,000",description:"A smooth, comforting lotion to make body care feel like a ritual.",tag:"Body care",image:"glow a.jpeg",benefits:"A moisturising body lotion for a comforting, smooth-feeling finish after bathing.",ingredients:"The packaging references arbutin, kojic acid, aloe and botanical ingredients. Contact us to confirm the complete current list.",howToUse:"Smooth over clean, dry skin and massage until absorbed. Ask us about recommended use.",availability:"Available to order — please confirm current stock with us."},
-  {id:"lustre-glow-oil-13k",name:"Lustre Glow Oil",label:"Lustre Glow Oil",category:"body",price:13000,priceLabel:"₦13,000",description:"A nourishing body oil for a little extra everyday softness.",tag:"Everyday glow",image:"lusture glow.jpeg",benefits:"A richly emollient body oil for a comforting, pampering moment after bathing.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Smooth a small amount over clean, slightly damp skin. Patch test before first use.",availability:"Available to order — please confirm current stock with us."},
+  {id:"lustre-glow-oil-13k",name:"Lustre Glow Oil",label:"Lustre Glow Oil",category:"body",price:13000,priceLabel:"₦13,000",description:"A nourishing body oil for a little extra everyday softness.",tag:"Everyday glow",image:"lusture glow oil.jpeg",benefits:"A richly emollient body oil for a comforting, pampering moment after bathing.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Smooth a small amount over clean, slightly damp skin. Patch test before first use.",availability:"Available to order — please confirm current stock with us."},
   {id:"purifying-clay-mask",name:"Purifying Clay Elixir Mask",label:"Purifying Clay Elixir Mask",category:"face",price:4000,priceLabel:"₦4,000",description:"A clay mask for a considered, at-home skincare moment.",tag:"Face ritual",image:"purifying clay elixir mask.jpeg",benefits:"A clay mask to complement your weekly face-care ritual.",ingredients:"Pink kaolin clay, turmeric, bentonite clay, neem, licorice root and peppermint are listed on the package.",howToUse:"Mix and apply as directed on the packaging. Avoid the eye area and discontinue if irritation occurs.",availability:"Available to order — please confirm current stock with us."},
   {id:"rose-toner",name:"Clear Bloom Rose Toner",label:"Clear Bloom Rose Toner",category:"face",price:5000,priceLabel:"₦5,000",description:"A gentle, refreshing rose toner for your everyday routine.",tag:"A daily favourite",image:"clear bloom rose toner.jpeg",benefits:"A refreshing facial toner to bring a little lift to your everyday skincare ritual.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Apply to clean skin with a cotton pad or as directed on the packaging.",availability:"Available to order — please confirm current stock with us."},
   {id:"hydra-balance",name:"Hydra Balance Moisturizer",label:"Hydra Balance Moisturizer",category:"face",price:4800,priceLabel:"₦4,800",description:"A comforting moisturiser to finish your daily face-care ritual.",tag:"Daily hydration",image:"hydra balance moisture.jpeg",benefits:"A moisturising step to complement your everyday skincare routine.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Smooth over clean skin as directed on the packaging.",availability:"Available to order — please confirm current stock with us."},
   {id:"lumibloom-face-wash",name:"Lumibloom Face Wash",label:"Lumibloom Face Wash",category:"cleanse",price:6500,priceLabel:"₦6,500",description:"A refreshing daily cleanse to start or end your skincare ritual.",tag:"Daily cleanse",image:"lumibloom.jpeg",benefits:"A face wash for a simple, considered cleansing step in your skincare ritual.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Lather a small amount with water, cleanse gently and rinse thoroughly. Avoid the eye area.",availability:"Available to order — please confirm current stock with us."},
-  {id:"botanical-serum",name:"Botanical Balance Serum",label:"Botanical Balance Serum",category:"face",price:6700,priceLabel:"₦6,700",description:"A thoughtful little step to add to your daily face-care ritual.",tag:"Botanical care",image:"collection.jpg",benefits:"A considered botanical serum made to complement your daily face-care routine.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Apply a few drops to clean skin and gently press in. Ask us how to pair it with your routine.",availability:"Available to order — please confirm current stock with us."},
+  {id:"botanical-serum",name:"Botanical Balance Serum",label:"Botanical Balance Serum",category:"face",price:6700,priceLabel:"₦6,700",description:"A thoughtful little step to add to your daily face-care ritual.",tag:"Botanical care",image:"botanical balance serum.jpeg",benefits:"A considered botanical serum made to complement your daily face-care routine.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Apply a few drops to clean skin and gently press in. Ask us how to pair it with your routine.",availability:"Available to order — please confirm current stock with us."},
   {id:"turmeric-sugar-scrub",name:"Turmeric Sugar Scrub",label:"Turmeric Sugar Scrub",category:"body",price:7500,priceLabel:"₦7,500",description:"A botanical-inspired exfoliating step for your weekly reset.",tag:"Weekly ritual",image:"tumeric.jpeg",benefits:"A scrub to bring a gentle exfoliating moment to your body-care routine.",ingredients:"The product packaging lists ingredients; please contact us to confirm the full current list.",howToUse:"Gently massage over wet skin, then rinse thoroughly. Use as directed on the packaging.",availability:"Available to order — please confirm current stock with us."},
   {id:"herbal-soap",name:"Flawless Herbal Soap",label:"African Black & Green Herbal Soap",category:"cleanse",price:7800,priceLabel:"₦7,800",description:"A carefully made herbal cleansing bar for your everyday wash.",tag:"Herbal cleanse",image:"flawless harbal soap.jpeg",benefits:"A herbal soap for a simple, considered cleansing step in your body-care ritual.",ingredients:"African black soap and botanical ingredients are mentioned on the packaging. Please contact us to confirm the complete current list.",howToUse:"Lather between wet hands, cleanse gently and rinse well. Avoid the eye area.",availability:"Available to order — please confirm current stock with us."},
-  {id:"luster-glow-oil",name:"Luster Glow Oil",label:"Luster Glow Oil",category:"body",price:8000,priceLabel:"₦8,000",description:"A nourishing body oil for a little extra everyday softness.",tag:"Everyday glow",image:"collection.jpg",benefits:"A richly emollient body oil for a comforting, pampering moment after bathing.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Smooth a small amount over clean, slightly damp skin. Patch test before first use.",availability:"Available to order — please confirm current stock with us."},
+  {id:"luster-glow-oil",name:"Luster Glow Oil",label:"Luster Glow Oil",category:"body",price:8000,priceLabel:"₦8,000",description:"A nourishing body oil for a little extra everyday softness.",tag:"Everyday glow",image:"lusture glow.jpeg",benefits:"A richly emollient body oil for a comforting, pampering moment after bathing.",ingredients:"Please contact us for the full ingredient list and current product details.",howToUse:"Smooth a small amount over clean, slightly damp skin. Patch test before first use.",availability:"Available to order — please confirm current stock with us."},
   {id:"full-kit",name:"Full Kit",label:"Blessed Fingers Naturals full skincare kit",category:"kit",price:78000,priceLabel:"₦78,000",description:"A complete collection of skincare favourites in one thoughtful kit.",tag:"The full collection",image:"full kit.jpeg",benefits:"A collection of Blessed Fingers Naturals favourites in one kit.",ingredients:"Ingredients vary by product. Contact us for individual product details.",howToUse:"Products have different directions for use. Please ask us for help building your routine.",availability:"Available to order — please confirm current stock with us."}
 ];
 
@@ -111,12 +111,46 @@ renderProducts();
 
 
 const reviewForm = document.querySelector("#review-form");
-reviewForm?.addEventListener("submit", (event) => {
+const reviewStatus = document.querySelector("#review-form-status");
+if (reviewStatus) reviewStatus.textContent = "Your review will be sent securely to the Blessed Fingers Naturals team.";
+reviewForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!reviewForm.reportValidity()) return;
+  const status = reviewStatus;
+  const submitButton = reviewForm.querySelector('button[type="submit"]');
   const formData = new FormData(reviewForm);
-  const subject = `Customer review: ${formData.get("product")}`;
-  const body = `Name: ${formData.get("name")}\nProduct: ${formData.get("product")}\nRating: ${formData.get("rating")}\n\nReview:\n${formData.get("review")}`;
-  document.querySelector("#review-form-status").textContent = "Opening your email app with the review ready to send.";
-  window.location.href = `mailto:idayatqazeem445@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  formData.append("_subject", `Customer review: ${formData.get("product")}`);
+  const payload = Object.fromEntries(formData.entries());
+  payload._captcha = "false";
+  submitButton.disabled = true;
+  status.textContent = "Sending your review…";
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/idayatqazeem445@gmail.com", {
+      method: "POST",
+      headers: { Accept: "application/json", "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    const result = await response.json();
+    if (!response.ok || result.success === "false") throw new Error("Review could not be sent");
+    reviewForm.reset();
+    status.textContent = "Thank you! Your review has been sent to the Blessed Fingers Naturals team.";
+  } catch (error) {
+    status.textContent = "We couldn’t send that just now. Please email your review to idayatqazeem445@gmail.com.";
+  } finally {
+    submitButton.disabled = false;
+  }
 });
+
+// Reveal content as it enters view, while leaving it visible when motion is reduced.
+if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const revealItems = document.querySelectorAll(".values-strip, .section-heading, .care-image, .care-copy, .promise-card, .testimonial, .whatsapp-inner, .footer-main");
+  revealItems.forEach((item) => item.classList.add("reveal-on-scroll"));
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach((item) => revealObserver.observe(item));
+}

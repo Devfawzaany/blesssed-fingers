@@ -9,6 +9,24 @@
 .review-form{max-width:760px;margin:42px auto 0;padding:28px;background:#f7f5ee;border:1px solid #eeeae1;border-radius:3px}.review-form-heading h3{font-family:var(--serif);font-size:23px;font-weight:500;margin:8px 0 3px}.review-form-heading p{font-size:10px;color:#77786e;margin:0 0 20px}.review-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin-bottom:17px}.review-fields label{display:flex;flex-direction:column;gap:6px;color:#55594f;font-size:10px;font-weight:600}.review-fields input,.review-fields select,.review-fields textarea{width:100%;border:1px solid #dcd8cd;border-radius:3px;background:#fffefa;padding:11px 12px;color:var(--ink);font:400 11px var(--sans);outline:none}.review-fields input:focus,.review-fields select:focus,.review-fields textarea:focus{border-color:var(--green);box-shadow:0 0 0 2px #53694920}.review-fields textarea{resize:vertical;min-height:105px}.review-message{grid-column:1/-1}.review-form .button{border-radius:3px}.review-form-status{margin:9px 0 0;color:#7c7b72;font-size:9px}.product-card,.testimonial,.modal-panel,.hero-photo,.product-image,.image-note,.button,.filter-button{border-radius:3px}.hero-stamp,.review-avatar{border-radius:50%}.mobile-whatsapp{border-radius:999px}
 @media(max-width:650px){.review-form{padding:19px;margin-top:27px}.review-fields{grid-template-columns:1fr;gap:12px}.review-message{grid-column:auto}.review-form-heading h3{font-size:20px}}
 
+/* Gentle movement that supports the product story without distracting from it. */
+.hero-copy{animation:hero-enter .75s cubic-bezier(.2,.7,.2,1) both}
+.hero-visual{animation:hero-enter .9s .12s cubic-bezier(.2,.7,.2,1) both}
+.hero-stamp{animation:stamp-enter .7s .5s cubic-bezier(.2,.8,.2,1) both}
+.announcement-dot{animation:soft-pulse 3s ease-in-out infinite}
+.hero-photo img,.care-image img{transition:transform .8s cubic-bezier(.2,.65,.3,1)}
+.hero-photo:hover img,.care-image:hover img{transform:scale(1.025)}
+.reveal-on-scroll{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.reveal-on-scroll.is-visible{opacity:1;transform:translateY(0)}
+.promise-card:nth-child(2),.testimonial:nth-child(2){transition-delay:.08s}
+.promise-card:nth-child(3),.testimonial:nth-child(3){transition-delay:.16s}
+.review-form .button{transition:transform .2s ease,background .2s ease,opacity .2s ease}
+.review-form .button:disabled{opacity:.65;cursor:wait;transform:none}
+@keyframes hero-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes stamp-enter{from{opacity:0;transform:translateY(8px) rotate(-18deg) scale(.9)}to{opacity:1;transform:translateY(0) rotate(-8deg) scale(1)}}
+@keyframes soft-pulse{0%,100%{opacity:.65;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
+@media(prefers-reduced-motion:reduce){.hero-copy,.hero-visual,.hero-stamp,.announcement-dot{animation:none}.hero-photo img,.care-image img{transition:none}.reveal-on-scroll{opacity:1;transform:none;transition:none}}
+
 /* Keep component corners consistently restrained; retain circular accents. */
 .product-card,.testimonial,.review-form,.modal-panel,.hero-photo,.product-image,.image-note,.button,.button-whatsapp,.filter-button,.review-fields input,.review-fields select,.review-fields textarea,.photo-caption,.product-tag{border-radius:3px}
 .hero-stamp,.review-avatar{border-radius:50%}.mobile-whatsapp{border-radius:999px}
