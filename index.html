@@ -1,51 +1,474 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f9f7f1">
-  <meta name="description" content="Discover thoughtful, plant-inspired skincare from Blessed Fingers Naturals. Explore our collection and order directly on WhatsApp.">
-  <title>Blessed Fingers Naturals — Natural care, beautifully you</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js" defer></script>
-</head>
-<body>
-  <div class="announcement"><span>Thoughtful care for your everyday ritual</span><span class="announcement-dot">✳</span><span>Made with care in Nigeria</span></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Blessed Fingers Naturals home">
-      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M21 35V18m0 9C13 27 9 23 9 17c7 0 12 4 12 10Zm0-6c0-8 4-13 11-15 1 8-3 14-11 17Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 35h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
-      <span class="brand-copy"><span class="brand-name">Blessed Fingers</span><span class="brand-subtitle">N A T U R A L S</span></span>
-    </a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">Our story</a><a href="#contact">Contact</a><a class="button button-dark nav-cta" data-whatsapp href="#">Chat on WhatsApp <span>↗</span></a></nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f9f7f1" />
+    <meta
+      name="description"
+      content="Discover thoughtful, plant-inspired skincare from Blessed Fingers Naturals. Explore our collection and order directly on WhatsApp."
+    />
+    <title>Blessed Fingers Naturals — Natural care, beautifully you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;">
+      <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+      <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5m-7 7 7-7 7 7"/></symbol>
+      <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 4 13c0-6 6-10 17-10 0 11-4 17-10 17Z"/><path d="M8 16c2-2 5-5 9-8"/></symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2.75 2.86 5.8 6.4.93-4.63 4.52 1.09 6.38L12 17.37l-5.72 3.01 1.09-6.38-4.63-4.52 6.4-.93L12 2.75Z"/></symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    </svg>
+    <div class="announcement">
+      <span>Thoughtful care for your everyday ritual</span
+      ><span class="announcement-dot"><svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span
+      ><span>Made with care in Nigeria</span>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Blessed Fingers Naturals home">
+        <span class="brand-mark" aria-hidden="true"
+          ><svg viewBox="0 0 42 42" fill="none">
+            <path
+              d="M21 35V18m0 9C13 27 9 23 9 17c7 0 12 4 12 10Zm0-6c0-8 4-13 11-15 1 8-3 14-11 17Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13 35h16"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+            /></svg
+        ></span>
+        <span class="brand-copy"
+          ><span class="brand-name">Blessed Fingers</span
+          ><span class="brand-subtitle">N A T U R A L S</span></span
+        >
+      </a>
+      <button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <svg class="icon menu-open-icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon menu-close-icon" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#shop">Shop</a
+        ><a href="#about">Our story</a><a href="#contact">Contact</a
+        ><a class="button button-dark nav-cta" data-whatsapp href="#"
+          >Chat on WhatsApp <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a
+        >
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-line"></span> A little nature, a lot of care</span><h1>Natural care.<br><em>Beautifully</em> you.</h1><p>Gentle, plant-inspired skincare for the way you want to feel in your skin. Thoughtfully made for your everyday ritual.</p><div class="hero-actions"><a class="button button-dark" href="#shop">Discover our collection <span>→</span></a><a class="text-link" data-whatsapp href="#">Have a question? <span>Chat with us ↗</span></a></div><div class="hero-note"><span class="note-icon">✳</span><span>Made with care, for your<br>everyday kind of glow.</span></div></div>
-      <div class="hero-visual"><div class="hero-photo"><img src="collection.jpg" alt="A selection of Blessed Fingers Naturals skincare products" fetchpriority="high"><div class="photo-caption"><span>THE EVERYDAY EDIT</span><span>Plant-inspired, always personal</span></div></div><div class="hero-stamp"><span>Care that</span><span>feels like</span><em>you.</em><svg viewBox="0 0 42 42" fill="none" aria-hidden="true"><path d="M21 35V18m0 9C13 27 9 23 9 17c7 0 12 4 12 10Zm0-6c0-8 4-13 11-15 1 8-3 14-11 17Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
-      <a class="hero-scroll" href="#shop"><span>Scroll to explore</span><span class="scroll-line"></span></a>
-    </section>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow"
+            ><span class="eyebrow-line"></span> A little nature, a lot of
+            care</span
+          >
+          <h1>Natural care.<br /><em>Beautifully</em> you.</h1>
+          <p>
+            Gentle, plant-inspired skincare for the way you want to feel in your
+            skin. Thoughtfully made for your everyday ritual.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#shop"
+              >Discover our collection <svg class="icon icon-arrow-right" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a
+            ><a class="text-link" data-whatsapp href="#"
+              >Have a question? <span>Chat with us <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span></a
+            >
+          </div>
+          <div class="hero-note">
+            <span class="note-icon"><svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span
+            ><span>Made with care, for your<br />everyday kind of glow.</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img
+              src="collection.jpg"
+              alt="A selection of Blessed Fingers Naturals skincare products"
+              fetchpriority="high"
+            />
+            <div class="photo-caption">
+              <span>THE EVERYDAY EDIT</span
+              ><span>Plant-inspired, always personal</span>
+            </div>
+          </div>
+          <div class="hero-stamp">
+            <span>Care that</span><span>feels like</span><em>you.</em
+            ><svg viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <path
+                d="M21 35V18m0 9C13 27 9 23 9 17c7 0 12 4 12 10Zm0-6c0-8 4-13 11-15 1 8-3 14-11 17Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <a class="hero-scroll" href="#shop"
+          ><span>Scroll to explore</span><span class="scroll-line"></span
+        ></a>
+      </section>
 
-    <section class="values-strip" aria-label="Our promise"><div><span>01</span><p>Plant-inspired ingredients</p></div><div><span>02</span><p>Made thoughtfully in Nigeria</p></div><div><span>03</span><p>Care for your everyday</p></div></section>
+      <section class="values-strip" aria-label="Our promise">
+        <div>
+          <span>01</span>
+          <p>Plant-inspired ingredients</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>Made thoughtfully in Nigeria</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Care for your everyday</p>
+        </div>
+      </section>
 
-    <section class="shop-section section-wrap" id="shop"><div class="section-heading"><div><span class="eyebrow">FIND YOUR FEEL-GOOD</span><h2>A ritual, just for <em>you.</em></h2></div><a class="text-link desktop-link" href="#contact">Not sure where to start? <span>Let us help ↗</span></a></div><div class="filter-row" role="group" aria-label="Filter products"><button class="filter-button active" data-filter="all">All the good things <span>06</span></button><button class="filter-button" data-filter="face">Face</button><button class="filter-button" data-filter="body">Body</button><button class="filter-button" data-filter="cleanse">Cleanse</button></div><div class="product-grid" id="product-grid" aria-live="polite"></div><p class="catalogue-note">A little note: ingredients and availability can vary. <a data-whatsapp href="#">Ask us about a product ↗</a></p></section>
+      <section class="shop-section section-wrap" id="shop">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">FIND YOUR FEEL-GOOD</span>
+            <h2>A ritual, just for <em>you.</em></h2>
+          </div>
+          <a class="text-link desktop-link" href="#contact"
+            >Not sure where to start? <span>Let us help <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span></a
+          >
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter products">
+          <button class="filter-button active" data-filter="all">
+            All the good things <span>06</span></button
+          ><button class="filter-button" data-filter="face">Face</button
+          ><button class="filter-button" data-filter="body">Body</button
+          ><button class="filter-button" data-filter="cleanse">Cleanse</button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="catalogue-note">
+          A little note: ingredients and availability can vary.
+          <a data-whatsapp href="#">Ask us about a product <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a>
+        </p>
+      </section>
 
-    <section class="care-section" id="about"><div class="care-image"><img src="bag.jpg" alt="Blessed Fingers Naturals shopping bag and brand identity" loading="lazy"><span class="image-note">A brand with care at its heart.</span></div><div class="care-copy"><span class="eyebrow">A MORE PERSONAL KIND OF CARE</span><h2>Skincare should feel like <em>coming home.</em></h2><p>Blessed Fingers Naturals began with a simple belief: the care we give ourselves can be gentle, thoughtful and rooted in nature. As a Nigerian, woman-owned brand, we create everyday skincare with intention, so finding a ritual that feels like yours is a little easier.</p><p>Good skin days look different for everyone. We’re here to help you discover what feels right for you, one considered product at a time.</p><a class="button button-outline" data-whatsapp href="#">Get to know us <span>↗</span></a><div class="care-signoff"><span class="signoff-leaf">✳</span><span>Made with care.<br><em>Always from the heart.</em></span></div></div></section>
+      <section class="care-section" id="about">
+        <div class="care-image">
+          <img
+            src="bag.jpg"
+            alt="Blessed Fingers Naturals shopping bag and brand identity"
+            loading="lazy"
+          /><span class="image-note">A brand with care at its heart.</span>
+        </div>
+        <div class="care-copy">
+          <span class="eyebrow">A MORE PERSONAL KIND OF CARE</span>
+          <h2>Skincare should feel like <em>coming home.</em></h2>
+          <p>
+            Blessed Fingers Naturals began with a simple belief: the care we
+            give ourselves can be gentle, thoughtful and rooted in nature. As a
+            Nigerian, woman-owned brand, we create everyday skincare with
+            intention, so finding a ritual that feels like yours is a little
+            easier.
+          </p>
+          <p>
+            Good skin days look different for everyone. We’re here to help you
+            discover what feels right for you, one considered product at a time.
+          </p>
+          <a class="button button-outline" data-whatsapp href="#"
+            >Get to know us <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a
+          >
+          <div class="care-signoff">
+            <span class="signoff-leaf"><svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span
+            ><span>Made with care.<br /><em>Always from the heart.</em></span>
+          </div>
+        </div>
+      </section>
 
-    <section class="promise-section"><div class="promise-inner"><div class="promise-intro"><span class="eyebrow eyebrow-light">THE LITTLE THINGS MATTER</span><h2>Care you can<br><em>feel good about.</em></h2><p>Because what you put on your skin should feel as considered as the way you care for yourself.</p></div><div class="promise-grid"><article class="promise-card"><span>01 <i>✳</i></span><h3>Nature, thoughtfully</h3><p>We choose ingredients with care, inspired by the goodness of botanicals.</p></article><article class="promise-card"><span>02 <i>✳</i></span><h3>Made with intention</h3><p>Everyday formulas created with your comfort and confidence in mind.</p></article><article class="promise-card"><span>03 <i>✳</i></span><h3>Care that feels personal</h3><p>Real conversations to help you find the products that suit your ritual.</p></article><article class="promise-card"><span>04 <i>✳</i></span><h3>A little more joy</h3><p>Good skincare should feel like a moment of kindness just for you.</p></article></div></div></section>
+      <section class="promise-section">
+        <div class="promise-inner">
+          <div class="promise-intro">
+            <span class="eyebrow eyebrow-light">THE LITTLE THINGS MATTER</span>
+            <h2>Care you can<br /><em>feel good about.</em></h2>
+            <p>
+              Because what you put on your skin should feel as considered as the
+              way you care for yourself.
+            </p>
+          </div>
+          <div class="promise-grid">
+            <article class="promise-card">
+              <span>01 <svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span>
+              <h3>Nature, thoughtfully</h3>
+              <p>
+                We choose ingredients with care, inspired by the goodness of
+                botanicals.
+              </p>
+            </article>
+            <article class="promise-card">
+              <span>02 <svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span>
+              <h3>Made with intention</h3>
+              <p>
+                Everyday formulas created with your comfort and confidence in
+                mind.
+              </p>
+            </article>
+            <article class="promise-card">
+              <span>03 <svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span>
+              <h3>Care that feels personal</h3>
+              <p>
+                Real conversations to help you find the products that suit your
+                ritual.
+              </p>
+            </article>
+            <article class="promise-card">
+              <span>04 <svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span>
+              <h3>A little more joy</h3>
+              <p>
+                Good skincare should feel like a moment of kindness just for
+                you.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <section class="kind-words section-wrap"><div class="section-heading"><div><span class="eyebrow">KIND WORDS FROM OUR COMMUNITY</span><h2>Little love notes.</h2></div><div class="review-score"><span>★★★★★</span><small>Shared with love</small></div></div><div class="testimonial-grid"><article class="testimonial"><div class="stars">★★★★★</div><blockquote>“The rose water is such a lovely part of my morning routine. It feels refreshing and my skin feels so comfortable after.”</blockquote><div class="reviewer"><span class="review-avatar avatar-rose">A</span><span><strong>Aisha M.</strong><small>Rose Water customer</small></span></div></article><article class="testimonial"><div class="stars">★★★★★</div><blockquote>“I love that I could ask questions before choosing. The personal care made the whole experience feel so welcoming.”</blockquote><div class="reviewer"><span class="review-avatar avatar-sand">Z</span><span><strong>Zainab K.</strong><small>Botanical Balance customer</small></span></div></article><article class="testimonial"><div class="stars">★★★★★</div><blockquote>“Glow Oil has become one of my little self-care favourites. A lovely product and such kind service too.”</blockquote><div class="reviewer"><span class="review-avatar avatar-green">F</span><span><strong>Fatima R.</strong><small>Glow Oil customer</small></span></div></article></div><p class="review-footnote">A few kind words from our community. Experiences can be different for everyone.</p><form class="review-form" id="review-form"><div class="review-form-heading"><span class="eyebrow">YOUR EXPERIENCE MATTERS</span><h3>Leave us a little love note.</h3><p>Share your experience with the Blessed Fingers Naturals team.</p></div><div class="review-fields"><label>Your name<input name="name" autocomplete="name" required maxlength="80" placeholder="How should we address you?"></label><label>Product<select name="product" required><option value="" disabled selected>Choose a product</option><option>Glow Harvest Brightening Lotion</option><option>Lustre Glow Oil</option><option>Purifying Clay Elixir Mask</option><option>Clear Bloom Rose Toner</option><option>Hydra Balance Moisturizer</option><option>Lumibloom Face Wash</option><option>Botanical Balance Serum</option><option>Turmeric Sugar Scrub</option><option>Flawless Herbal Soap</option><option>Luster Glow Oil</option><option>Full Kit</option><option>Other</option></select></label><label>Rating<select name="rating" required><option value="" disabled selected>Select a rating</option><option value="5 stars">5 stars - Loved it</option><option value="4 stars">4 stars - Really liked it</option><option value="3 stars">3 stars - It was okay</option><option value="2 stars">2 stars - Could be better</option><option value="1 star">1 star - Not for me</option></select></label><label class="review-message">Your review<textarea name="review" rows="4" required maxlength="1000" placeholder="Tell us what you think..."></textarea></label></div><button class="button button-dark" type="submit">Send your review <span>↗</span></button><p class="review-form-status" id="review-form-status" role="status">Your email app will open with your review ready to send.</p></form></section>
+      <section class="kind-words section-wrap">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">KIND WORDS FROM OUR COMMUNITY</span>
+            <h2>Little love notes.</h2>
+          </div>
+          <div class="review-score">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg></span><small>Shared with love</small>
+          </div>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial">
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg></div>
+            <blockquote>
+              “The rose water is such a lovely part of my morning routine. It
+              feels refreshing and my skin feels so comfortable after.”
+            </blockquote>
+            <div class="reviewer">
+              <span class="review-avatar avatar-rose">A</span
+              ><span
+                ><strong>Aisha M.</strong
+                ><small>Rose Water customer</small></span
+              >
+            </div>
+          </article>
+          <article class="testimonial">
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg></div>
+            <blockquote>
+              “I love that I could ask questions before choosing. The personal
+              care made the whole experience feel so welcoming.”
+            </blockquote>
+            <div class="reviewer">
+              <span class="review-avatar avatar-sand">Z</span
+              ><span
+                ><strong>Zainab K.</strong
+                ><small>Botanical Balance customer</small></span
+              >
+            </div>
+          </article>
+          <article class="testimonial">
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg><svg class="icon icon-star" aria-hidden="true"><use href="#icon-star"/></svg></div>
+            <blockquote>
+              “Glow Oil has become one of my little self-care favourites. A
+              lovely product and such kind service too.”
+            </blockquote>
+            <div class="reviewer">
+              <span class="review-avatar avatar-green">F</span
+              ><span
+                ><strong>Fatima R.</strong
+                ><small>Glow Oil customer</small></span
+              >
+            </div>
+          </article>
+        </div>
+        <p class="review-footnote">
+          A few kind words from our community. Experiences can be different for
+          everyone.
+        </p>
+        <form class="review-form" id="review-form">
+          <div class="review-form-heading">
+            <span class="eyebrow">YOUR EXPERIENCE MATTERS</span>
+            <h3>Leave us a little love note.</h3>
+            <p>Share your experience with the Blessed Fingers Naturals team.</p>
+          </div>
+          <div class="review-fields">
+            <label
+              >Your name<input
+                name="name"
+                autocomplete="name"
+                required
+                maxlength="80"
+                placeholder="How should we address you?" /></label
+            ><label
+              >Product<select name="product" required>
+                <option value="" disabled selected>Choose a product</option>
+                <option>Glow Harvest Brightening Lotion</option>
+                <option>Lustre Glow Oil</option>
+                <option>Purifying Clay Elixir Mask</option>
+                <option>Clear Bloom Rose Toner</option>
+                <option>Hydra Balance Moisturizer</option>
+                <option>Lumibloom Face Wash</option>
+                <option>Botanical Balance Serum</option>
+                <option>Turmeric Sugar Scrub</option>
+                <option>Flawless Herbal Soap</option>
+                <option>Luster Glow Oil</option>
+                <option>Full Kit</option>
+                <option>Other</option>
+              </select></label
+            ><label
+              >Rating<select name="rating" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5 stars">5 stars - Loved it</option>
+                <option value="4 stars">4 stars - Really liked it</option>
+                <option value="3 stars">3 stars - It was okay</option>
+                <option value="2 stars">2 stars - Could be better</option>
+                <option value="1 star">1 star - Not for me</option>
+              </select></label
+            ><label class="review-message"
+              >Your review<textarea
+                name="review"
+                rows="4"
+                required
+                maxlength="1000"
+                placeholder="Tell us what you think..."
+              ></textarea>
+            </label>
+          </div>
+          <button class="button button-dark" type="submit">
+            Send your review <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg>
+          </button>
+          <p class="review-form-status" id="review-form-status" role="status">
+            Your email app will open with your review ready to send.
+          </p>
+        </form>
+      </section>
 
-    <section class="whatsapp-section" id="contact"><div class="whatsapp-inner"><span class="whatsapp-flower">✳</span><div><span class="eyebrow">HERE FOR YOU, ALWAYS</span><h2>Need a little help<br>finding your <em>ritual?</em></h2><p>Tell us about your skin and what you’re looking for.<br>We’ll be happy to help you explore.</p><a class="button button-dark" data-whatsapp href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.03 2a9.75 9.75 0 0 0-8.35 14.79L2.25 22l5.34-1.4A9.8 9.8 0 1 0 12.03 2Zm0 17.86a8.06 8.06 0 0 1-4.1-1.12l-.3-.18-3.16.83.84-3.08-.2-.32a8.06 8.06 0 1 1 6.92 3.87Zm4.43-6.04c-.24-.12-1.43-.71-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.18-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.47-.39-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.83-.84 2.03s.86 2.35.98 2.51c.12.16 1.7 2.6 4.13 3.65.58.25 1.03.4 1.38.51.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg>Chat with us on WhatsApp <span>↗</span></a></div><div class="whatsapp-aside"><span>We’re a real person<br>on the other side.</span><i>Usually reply within a day</i></div></div></section>
-  </main>
+      <section class="whatsapp-section" id="contact">
+        <div class="whatsapp-inner">
+          <span class="whatsapp-flower"><svg class="icon icon-leaf" aria-hidden="true"><use href="#icon-leaf"/></svg></span>
+          <div>
+            <span class="eyebrow">HERE FOR YOU, ALWAYS</span>
+            <h2>Need a little help<br />finding your <em>ritual?</em></h2>
+            <p>
+              Tell us about your skin and what you’re looking for.<br />We’ll be
+              happy to help you explore.
+            </p>
+            <a class="button button-dark" data-whatsapp href="#"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12.03 2a9.75 9.75 0 0 0-8.35 14.79L2.25 22l5.34-1.4A9.8 9.8 0 1 0 12.03 2Zm0 17.86a8.06 8.06 0 0 1-4.1-1.12l-.3-.18-3.16.83.84-3.08-.2-.32a8.06 8.06 0 1 1 6.92 3.87Zm4.43-6.04c-.24-.12-1.43-.71-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.18-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.47-.39-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.83-.84 2.03s.86 2.35.98 2.51c.12.16 1.7 2.6 4.13 3.65.58.25 1.03.4 1.38.51.58.18 1.1.16 1.51.1.46-.07 1.43-.59 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"
+                /></svg
+              >Chat with us on WhatsApp <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a
+            >
+          </div>
+          <div class="whatsapp-aside">
+            <span>We’re a real person<br />on the other side.</span
+            ><i>Usually reply within a day</i>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-mark"><svg viewBox="0 0 42 42" fill="none"><path d="M21 35V18m0 9C13 27 9 23 9 17c7 0 12 4 12 10Zm0-6c0-8 4-13 11-15 1 8-3 14-11 17Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 35h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span class="brand-copy"><span class="brand-name">Blessed Fingers</span><span class="brand-subtitle">N A T U R A L S</span></span></a><p>Gentle care for the skin you’re in.<br>Thoughtfully made with love in Nigeria.</p></div><div class="footer-column"><h3>EXPLORE</h3><a href="#shop">Shop all</a><a href="#about">Our story</a><a href="#contact">Get in touch</a></div><div class="footer-column"><h3>LET’S TALK</h3><a data-whatsapp href="#">WhatsApp us ↗</a><a href="mailto:idayatqazeem445@gmail.com">idayatqazeem445@gmail.com</a><span>Abuja, Nigeria</span><span>Mon – Sun · 9am – 5pm</span></div><div class="footer-column"><h3>FOLLOW ALONG</h3><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook ↗</a><span>Little moments of everyday care.</span></div></div><div class="footer-bottom"><span>© 2025 Blessed Fingers Naturals. All rights reserved.</span><span>Made with <i>♥</i> and a little nature.</span><a href="#home" class="back-top">Back to top ↑</a></div></footer>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="#home"
+            ><span class="brand-mark" aria-hidden="true"
+              ><svg viewBox="0 0 42 42" fill="none">
+                <path
+                  d="M21 35V18m0 9C13 27 9 23 9 17c7 0 12 4 12 10Zm0-6c0-8 4-13 11-15 1 8-3 14-11 17Z"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13 35h16"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                /></svg></span
+            ><span class="brand-copy"
+              ><span class="brand-name">Blessed Fingers</span
+              ><span class="brand-subtitle">N A T U R A L S</span></span
+            ></a
+          >
+          <p>
+            Gentle care for the skin you’re in.<br />Thoughtfully made with love
+            in Nigeria.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>EXPLORE</h3>
+          <a href="#shop">Shop all</a><a href="#about">Our story</a
+          ><a href="#contact">Get in touch</a>
+        </div>
+        <div class="footer-column">
+          <h3>LET’S TALK</h3>
+          <a data-whatsapp href="#">WhatsApp us <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a
+          ><a href="mailto:idayatqazeem445@gmail.com"
+            >idayatqazeem445@gmail.com</a
+          ><span>Abuja, Nigeria</span><span>Mon – Sun · 9am – 5pm</span>
+        </div>
+        <div class="footer-column">
+          <h3>FOLLOW ALONG</h3>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+            >Instagram <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a
+          ><a href="https://www.facebook.com/" target="_blank" rel="noreferrer"
+            >Facebook <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a
+          ><span>Little moments of everyday care.</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Blessed Fingers Naturals. All rights reserved.</span
+        ><span>Made with <svg class="icon icon-heart footer-heart" aria-hidden="true"><use href="#icon-heart"/></svg> and a little nature.</span
+        ><a href="#home" class="back-top">Back to top <svg class="icon icon-arrow-up" aria-hidden="true"><use href="#icon-arrow-up"/></svg></a>
+      </div>
+    </footer>
 
-  <div class="product-modal" id="product-modal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" aria-label="Close product details" data-close-modal>×</button><div class="modal-content" id="modal-content"></div></section></div>
-  <a class="mobile-whatsapp" data-whatsapp href="#" aria-label="Chat with us on WhatsApp"><span>Need a hand?</span><b>WhatsApp us ↗</b></a>
-</body>
+    <div class="product-modal" id="product-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button
+          class="modal-close"
+          aria-label="Close product details"
+          data-close-modal
+        >
+          <svg class="icon icon-close" aria-hidden="true"><use href="#icon-close"/></svg>
+        </button>
+        <div class="modal-content" id="modal-content"></div>
+      </section>
+    </div>
+    <a
+      class="mobile-whatsapp"
+      data-whatsapp
+      href="#"
+      aria-label="Chat with us on WhatsApp"
+      ><span>Need a hand?</span><b>WhatsApp us <svg class="icon icon-arrow-up-right" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></b></a
+    >
+  </body>
 </html>
